@@ -1,0 +1,26 @@
+package Labjava;
+class Student{
+    String name;
+	static int StudentCount=0;
+	Student(String name){
+		this.name=name;
+		StudentCount++;
+	}
+	public static int getStudentCount() {
+		return StudentCount;
+	}
+		
+	}
+	
+	public class StudentDetail{
+		public static void main(String[]args) {
+			Student s1 = new Student("Aleena");
+			Student S2 = new Student("Mariya");
+			Student S3 = new Student ("Sana");
+			int total=Student.getStudentCount();
+			System.out.println("totalstatic count:"+ total);
+		}
+			}
+	
+
+
