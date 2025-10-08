@@ -1,0 +1,29 @@
+
+import javax.swing.*;
+import java.awt.*;
+public class GUIDemo {
+	public static void main(String[]args) {
+		JFrame mainFrame=new JFrame();
+		mainFrame.setSize(300,150);
+		mainFrame.setTitle("The First GUI");
+		JPanel Panel = new JPanel();
+		Panel.setLayout(new GridLayout(3,2,10,10));
+		JLabel userLabel=new JLabel("user Name");
+		JTextField userField=new JTextField();
+		JLabel pwdLabel=new JLabel("Password");
+		JPasswordField pwdField=new JPasswordField();
+		JButton loginbtn=new JButton("login");
+		Panel.add(userLabel);
+		Panel.add(userField);
+		Panel.add(pwdLabel);
+		Panel.add(pwdField);
+		Panel.add(new JLabel(" "));
+		Panel.add(loginbtn);
+		mainFrame.add(Panel);
+		mainFrame.setLocationRelativeTo(null);
+		mainFrame.setVisible(true);
+		
+	}
+	
+
+}
